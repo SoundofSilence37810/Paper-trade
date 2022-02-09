@@ -1,0 +1,41 @@
+
+Requirements
+
+Mission Statement
+
+Create a paper trade stock trading platform to help educate the users to be able to make informed decisions in real life
+trading.
+
+Version one is to be a program shell with limited functionality. The goal is to create a program that is both flexible and
+scalable laying the framework for future versions.
+
+What technologies are needed for success in this project?
+
+Pandas
+Numpy
+yFinance
+yahoo_fin
+matplotlib
+python
+c
+
+MOSCOW
+
+Musts
+
+- A menu system and sub menu systems
+- Input various stock tickers
+- Pick a date and number of shares to see if a trade looses or makes money
+- Find the sticker price/fair value price of a stock
+
+
+Shoulds
+- buy and sell signals
+
+Coulds
+- Price graph over a duration of years
+- make this into a game
+- real and fake portfolio tracking
+
+Won'ts
+
