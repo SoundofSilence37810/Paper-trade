@@ -293,3 +293,34 @@ def dailyPriceIncreaseDecrease(ticker:str, percent:int):
 #Pick a date to buy a stock, number of shares, and purchase date
 #def mos(ticker:str, numberOfShares:int, dateOfPurchase:datetime, ) -> tuple:
 #    pass
+
+
+def price_chart(tickersymbol: str):
+    #Fixes compatibility issues with yahoo finance
+    yf.pdr_override()
+
+    #Set the ticker_object to ticker
+    ticker_object = yf.Ticker(tickersymbol)
+
+    #Get the stock information pandas dataframe
+    stock_info = ticker_object.info
+
+    #Get the price information as a pandas dataframe
+    price_info = ticker_object.history(period="max")
+
+    #print(price_info[3:])
+    # print(price_info)
+    #
+    # for key in price_info:
+    #     print(key,price_info[key][1])
+
+    #Display a chart
+    #plt.plot(price_info.index, price_info.iloc[:,[3]],price_info.index,price_info.iloc[:,[7]])
+    #plt.title(tickersymbol)
+    #plt.xlabel=('Price')
+    #plt.ylabel=('Year')
+    #plt.show()
+
+
+
+
